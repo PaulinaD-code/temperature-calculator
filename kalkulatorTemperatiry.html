@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- styles -->
+  <link rel="stylesheet" href="temperature.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playpen+Sans:wght@100;200;300;500;600;800&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="main-content">
+      <h1>Kalkulator temperatury - Celsjusz- Fahrenheit; Fahrenheit - Celsjusz</h1>
+      <div class="calculator1">
+        <h2>Kalkulator stopni Celsjusz - Fahrenheit</h2>
+        <div class="subcontainer">
+          <input type="number" class="input1" id="CelToFahr" onkeydown="keyEvent(event)">
+          <button class="checkBtn1" id="celToFahrBtn">check</button>
+        </div>       
+        <div class="answer1" id="answer1">Podana wartość w stopniach Celsjusza stanowi</div>
+      </div>   
+      <div class="calculator2">
+        <h2>Kalkulator stopni Fahrenheit - Celsjusz</h2>
+        <div class="subcontainer">
+          <input type="number" class="input2" id="FahrToCell" onkeydown="checkKeyEvent(event)">
+          <button class="checkBtn2" id="fahtToCellBtn">check</button>
+        </div>
+        
+        <div class="answer2" id="answer2">Podana wartość w stopniach Fahrenheita stanowi</div>
+      </div>
+    </div>
+    <div class="image">
+      <img src="./img/pogoda11.jpg" alt="" class="img">
+    </div>
+  </div>
+  <script src="temperatures.js"></script>
+</body>
+</html>
