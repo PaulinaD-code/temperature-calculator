@@ -106,6 +106,10 @@ body{
     font-size: 1em;
   }
 
+   .main-container{
+    padding: .5em 1em;
+  }
+
   .subcontainer{
     display: flex;
     flex-direction: column;
